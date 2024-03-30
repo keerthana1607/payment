@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+            Form
+        </title>
+        <link  rel="stylesheet " href="style.css">
+       
+    </head>
+    <body>
+        <form name="form1" onsubmit="return validateForm()">
+<h2>Registration form</h2>
+<div class="box">
+    <label>Full name</label>
+    <input type="text" name="name" id="name">
+    <div class="error" id="nameErr"></div>
+</div>
+<div class="box">
+    <label>Email</label>
+    <input type="text" name="email" id="email">
+    <div class="error" id="emailErr"></div>
+</div>
+<div class="box">
+    <label>Phone number</label>
+    <input type="text" name="phone" id="phone" maxlength="10">
+    <div class="error" id="phoneErr"></div>
+</div>
+<div class="box">
+    <label>Country</label>
+    <select name="country" id="country" >
+        <option>
+            Select
+        </option>
+        <option>
+            India
+        </option>
+        <option>
+            UK
+        </option>
+
+    </select>
+    <div class="error" id="countryErr"></div>
+</div>
+<div class="box">
+    <label>Gender</label>
+    <div class="form-inline dgender">
+        <label><input type="radio" name="gender" value="Male">Male</label>
+        <label><input type="radio" name="gender" value="Female">Female</label>
+    </div>
+    <div class="error" id="genderErr"></div>
+</div>
+<div class="box">
+    <input type="submit" value="submit">
+</div>
+
+        </form>
+        <script src="form.js"></script>
+    </body>
+</html>
